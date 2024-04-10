@@ -14,7 +14,6 @@ public class ManagementImplementation implements ManagementInterface {
 
         ArrayList<ArrayList<String>> orderTable;
         String query = "SELECT * FROM Orders WHERE order_id=%s;".formatted(orderId);
-        System.out.println(query);
         orderTable = connectivity.selectValues(query);
 
 
